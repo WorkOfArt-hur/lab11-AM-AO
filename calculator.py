@@ -17,22 +17,19 @@ def multiply(a, b):
     return a*b
 
 def divide(a,b):
-    result = 0
-    try:
-        result = a/b
-        return result
-    except:
-        raise ZeroDivisionError
+   c = b/a
+   if a == 0:
+       raise ZeroDivisionError
+   else:
+       return c
         
 def logarithm(a,b):
-    result = 0
     try:
-        assert a > 1
-        assert b > 0
-        result = math.log(a,b)
-        return result
-    except:
-        raise ValueError
+        c = math.log(b,a)
+    except ValueError:
+        raise
+    else:
+        return c
     
 def exponent(a,b):
     return a**b
