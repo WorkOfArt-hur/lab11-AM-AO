@@ -15,6 +15,13 @@ def subtract(a,b):
 
 def multiply(a, b):
     return a*b
+
+def div(a,b):
+    c = b/a
+    if a == 0:
+        raise ZeroDivisionError
+    else:
+        return c
         
 def logarithm(a,b):
     result = 0
