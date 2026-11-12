@@ -17,10 +17,8 @@ def multiply(a, b):
     return a*b
 
 def divide(a,b):
-    result = 0
     try:
         return a/b
-        return result
     except:
         raise ZeroDivisionError
         
