@@ -1,21 +1,15 @@
 import unittest
 from calculator import *
 
-# https://github.com/WorkOfArt-hur/lab11-AM-AO.git
-# Partner 1: Arthur Mozzoni
-# Partner 2: Alejandro Ortiz
-
 class TestCalculator(unittest.TestCase):
 
     def test_add(self):
-        self.assertEqual(add(0,3), 3)
-        self.assertEqual(add(0.1, 56.78), 56.88)
-        self.assertEqual(add(-10, 5), -5)
+        assert 0 + 3
+        assert
 
-    def test_subtract(self):
-        self.assertEqual(sub(3,0), 3)
-        self.assertEqual(sub(0.1, 10.5), -10.4)
-        self.assertEqual(sub(90,-20), 110)
+    # def test_subtract(self): # 3 assertions
+    #     fill in code
+    # ##########################
 
     ######## Partner 1
     # def test_multiply(self): # 3 assertions
@@ -26,19 +20,19 @@ class TestCalculator(unittest.TestCase):
     # ##########################
 
     ######## Partner 2
-    def test_divide_by_zero(self): # 1 assertion
-        with self.assertRaises(ZeroDivisionError):
-            divide(0,10)
+    # def test_divide_by_zero(self): # 1 assertion
+    #     # call division function inside, example:
+    #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
+    #     #     div(0, 5)
+    #     fill in code
 
+    # def test_logarithm(self): # 3 assertions
+    #     fill in code
 
-    def test_logarithm(self): # 3 assertions
-        self.assertEqual(log(9, 3),2)
-        self.assertEqual(log(10000, 10), 4)
-        self.assertNotEqual(log(0, 5),0)
-
-    def test_log_invalid_base(self): # 1 assertion
-        with self.assertRaises(ValueError):
-            log(5,-1)
+    # def test_log_invalid_base(self): # 1 assertion
+    #     # use same technique from test_divide_by_zero
+    #     fill in code
+    # ##########################
     
     ######## Partner 1
     # def test_log_invalid_argument(self): # 1 assertion
