@@ -5,25 +5,37 @@ calculator.py
 One function per operation, in order.
 """
 import math
-def add(a,b):
+
+# First example
+def add(a, b): 
     return a + b
-def sub(a, b):
+
+def subtract(a,b):
     return a - b
-def mul(a,b):
-    return a * b
-def div(a, b):
-    c = b/a
-    if a == 0:
-        raise ZeroDivisionError
-    else:
-        return c
-def log(a, b):
+
+def multiply(a, b):
+    return a*b
+
+def divide(a,b):
+    result = 0
     try:
-        c = math.log(b,a)
-    except ValueError:
-        raise
-    else:
-        return c
-def exp(a, b):
-    return a ** b
+        result = a/b
+        return result
+    except:
+        raise ZeroDivisionError
+        
+def logarithm(a,b):
+    result = 0
+    try:
+        assert a > 1
+        assert b > 0
+        result = math.log(a,b)
+        return result
+    except:
+        raise ValueError
+    
+def exponent(a,b):
+    return a**b
+    
+
 
