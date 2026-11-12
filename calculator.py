@@ -19,7 +19,7 @@ def multiply(a, b):
 def divide(a,b):
     result = 0
     try:
-        result = a/b
+        return a/b
         return result
     except:
         raise ZeroDivisionError
