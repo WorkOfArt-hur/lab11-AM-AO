@@ -20,10 +20,10 @@ def add(a, b):
 def subtract(a,b):
     return a - b
 
-def multiply(a, b):
+def mul(a, b):
     return a*b
 
-def divide(a,b):
+def div(a,b):
     c = b/a
     if a == 0:
         raise ZeroDivisionError
@@ -33,15 +33,10 @@ def divide(a,b):
 def logarithm(a,b):
     result = 0
     try:
-        assert a > 1
-        assert b > 0
-        result = math.log(a,b)
+        result = math.log(b,a)
         return result
     except:
         raise ValueError
     
-def exponent(a,b):
+def exp(a,b):
     return a**b
-    
-
-
