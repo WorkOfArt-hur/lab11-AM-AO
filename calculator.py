@@ -26,7 +26,7 @@ def subtract(a,b):
 def multiply(a, b):
     return a*b
 
-def div(a,b):
+def divide(a,b):
     c = b/a
     if a == 0:
         raise ZeroDivisionError
